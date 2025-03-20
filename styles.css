@@ -58,7 +58,7 @@ nav ul li a:hover {
 main {
     padding: 20px;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.7); /* Полупрозрачный фон для основного контента */
+    background-color: rgba(0, 0, 0, 0.4); /* Полупрозрачный фон для основного контента */
     border-radius: 10px;
     margin: 20px auto;
     max-width: 900px;
@@ -101,7 +101,7 @@ section {
     text-decoration: none;
     font-weight: bold;
     padding: 10px 20px;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(10, 1, 6, 1);
     border: none;
     border-radius: 5px;
     cursor: pointer;
