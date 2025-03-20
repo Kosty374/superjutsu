@@ -1,0 +1,140 @@
+/* Сброс стандартных стилей браузера */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Устанавливаем фоновое изображение для всего сайта */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 2;
+    background-image: url('https://gen.jut.su/chakranature/background/anime/hanako-kun.dark.jpg');
+    background-size: 160%; /* Изображение заполняет весь экран */
+    background-position: 50% 10%; /* Центрируем изображение */
+    color: #fff; /* Белый цвет текста для лучшей читаемости */
+}
+
+/* Логотип */
+.logo {
+    display: block;
+    margin: 20px auto; /* Центрируем логотип */
+    max-width: 300px; /* Устанавливаем максимальную ширину */
+    height: auto;
+}
+
+/* Стили для заголовков */
+h1, h2, h3 {
+    margin-bottom: 15px;
+}
+
+/* Стили для навигации */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(12, 12, 12, 0.4); /* Прозрачный черный фон для навигации */
+    padding: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Основной контент */
+main {
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Полупрозрачный фон для основного контента */
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 900px;
+}
+
+/* Стили для футера */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.6); /* Прозрачный черный фон для футера */
+    color: #fff;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+}
+
+section {
+    margin-bottom: 100px; /* Увеличиваем отступ между секциями */
+}
+
+/* Стили для блока навигации серий */
+.series-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.series-navigation a, .series-navigation button {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.series-navigation button {
+    background-color: #007BFF;
+}
+
+.series-navigation a:hover, .series-navigation button:hover {
+    background-color: #555;
+}
+
+.series-navigation .previous-series,
+.series-navigation .next-series {
+    font-size: 16px;
+}
+
+.series-navigation .all-episodes-button {
+    font-size: 18px;
+}
+
+/* Стили для видео */
+video {
+    border-radius: 10px; /* Скругляем углы видео */
+    margin-top: 20px;
+}
+
+/* Увеличиваем отступы и стили для секций */
+section {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    margin-bottom: 40px;
+}

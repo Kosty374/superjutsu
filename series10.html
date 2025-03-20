@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Туалетный мальчик Ханако 1 сезон 10 серия</title>
+    <!-- Подключение CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">ТИПЫ</a></li>
+                <li><a href="#">ВОДА</a></li>
+                <li><a href="#">МОЛНИЯ</a></li>
+                <li><a href="#">ЗЕМЛЯ</a></li>
+                <li><a href="#">ВЕТЕР</a></li>
+                <li><a href="#">ЧАКРА</a></li>
+            </ul>
+        </nav>
+
+        <img src="https://gen.jut.su/templates/school/images/logo.dark.png" alt="Логотип" class="logo">
+    </header>
+
+    <main>
+        <section>
+            <h2>Туалетный мальчик Ханако 1 сезон 10 серия</h2>
+            <p>Древо Признаний.</p>
+            <video id="videoPlayer" controls width="800" height="450" poster="https://www.kino-teatr.ru/video/21719/start.jpg">
+                <source id="videoSource" src="https://r400203.yandexwebcache.org/hanako-kun/10.1080.bc14c79fd7ad6164.mp4?hash1=2d40696dcc2932d59ecfa599730a0032&hash2=f0b0abf48ba013f05ec498b010c6152b" type="video/mp4">
+                Ваш браузер не поддерживает элемент video.
+            </video>
+
+            <div class="series-navigation">
+                <!-- Переключение на 4 серию -->
+                <a href="series9.html" class="previous-series">← 9 серия</a>
+                <!-- Кнопка для всех серий -->
+                <button class="all-episodes-button">СПИСОК ВСЕХ СЕРИЙ</button>
+                <!-- Переключение на 6 серию -->
+                <a href="series11.html" class="next-series">11 серия →</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Мой сайт. Все права защищены.</p>
+    </footer>
+
+    <!-- Подключение JavaScript -->
+    <script>
+        // Получаем элементы видео и источника
+        var video = document.getElementById("videoPlayer");
+        var source = document.getElementById("videoSource");
+
+        // Время, через которое нужно сменить видео (в секундах)
+        var changeTime = 15 * 60; // 15 минут = 15 * 60 секунд
+
+        // URL второго видео
+        var secondVideoUrl = "https://r812136.yandexwebcache.org/solo-leveling/2/1.1080.2012379795529494.mp4?hash1=5e035e6d78764232f1dd8327c8fb5b2d&hash2=ff074e770b1668aa590fbff4acf97d57";
+
+        // Функция для смены видео
+        function changeVideo() {
+            source.src = secondVideoUrl;  // меняем источник на второй URL
+            video.load(); // перезагружаем видео
+            video.play(); // воспроизводим новое видео
+        }
+
+        // Следим за временем воспроизведения видео
+        video.ontimeupdate = function() {
+            if (video.currentTime >= changeTime) {
+                changeVideo();
+                video.ontimeupdate = null;  // Останавливаем проверку, чтобы не сменить видео несколько раз
+            }
+        };
+    </script>
+</body>
+</html>
