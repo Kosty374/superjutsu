@@ -10,30 +10,30 @@ body {
     font-family: Arial, sans-serif;
     line-height: 2;
     background-image: url('https://gen.jut.su/chakranature/background/anime/hanako-kun.dark.jpg');
-    background-size: 160%; /* Изображение заполняет весь экран */
-    background-position: 50% 10%; /* Центрируем изображение */
-    color: #fff; /* Белый цвет текста для лучшей читаемости */
+    background-size: 160%;
+    background-position: 50% 10%; 
+    color: #fff; 
 }
 
 /* Логотип */
 .logo {
     display: block;
-    margin: 20px auto; /* Центрируем логотип */
-    max-width: 300px; /* Устанавливаем максимальную ширину */
+    margin: 20px auto; 
+    max-width: 300px; 
     height: auto;
 }
 
-/* Стили для заголовков */
+
 h1, h2, h3 {
     margin-bottom: 15px;
 }
 
-/* Стили для навигации */
+
 nav ul {
     list-style-type: none;
     display: flex;
     justify-content: center;
-    background-color: rgba(12, 12, 12, 0.4); /* Прозрачный черный фон для навигации */
+    background-color: rgba(12, 12, 12, 0.3); 
     padding: 10px;
 }
 
